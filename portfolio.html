@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio - M. Vathsav Sri Krishna</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> <!-- Add EmailJS library -->
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("l-uTSFhtEiaWmEanX");
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contactForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent the default form submission
+                    
+                    // Use EmailJS to send the form data
+                    emailjs.sendForm('service_uh1pggk', 'template_cnm9x0e', this)
+                        .then(() => {
+                            alert('Message sent successfully!');
+                            document.getElementById('contactForm').reset(); // Reset form after sending
+                        }, (error) => {
+                            alert('Failed to send message, please try again later.');
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+        </script>
+        <style>
+            body, h1, h2, h3, h4, h5, h6 {font-family: "Montserrat", sans-serif;}
+            .w3-row-padding img {margin-bottom: 12px;}
+            .w3-sidebar {width: 120px; background: #222;}
+            #main {margin-left: 120px;}
+            @media only screen and (max-width: 600px) {#main {margin-left: 0;}}
+        </style>
+    </head>
+    
+    
+    
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <img src="me.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-code w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> M. Vathsav Sri Krishna.</h1>
+    <p>Cloud Computing and Android Developer | B.Tech Student</p>
+    <img src="me.jpg" alt="profile" class="w3-image" width="992" height="1108">
+</header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+        <p>
+            I’m M. Vathsav Sri Krishna, currently in my final year of B.Tech at Lovely Professional University, majoring in Cloud Computing with a minor in Android Application Development. With a strong foundation in AWS, Android Studio, Java, SQL, Python, VMware, and Data Structures & Algorithms (DSA), I am driven by a passion for cutting-edge technology and innovation.
+        </p>
+        <p>
+            Alongside my technical proficiency, I’ve cultivated essential soft skills like communication, management, aptitude, teamwork, adaptability, and problem-solving. These have been crucial in my role as the General Secretary of a university club, where I led initiatives and organized events while maintaining a fine balance between academics and extracurricular activities. Through this experience, I developed a knack for time management and leadership.
+        </p>
+        <p>
+            I’ve also pushed my boundaries by participating in several hackathons, which challenged me to think creatively and implement practical solutions under pressure. My portfolio reflects a range of hands-on projects, from building mobile apps to creating cloud-based solutions, each showcasing my technical versatility.
+        </p>
+        <p>
+            In my spare time, I love engaging in chess, which sharpens my strategic thinking, reading novels that broaden my perspective, and constantly improving my coding skills. My journey has been all about combining technical expertise with leadership and adaptability, positioning me for a future of continuous growth and innovation in the tech world.
+        </p>
+    
+    <h3 class="w3-padding-16 w3-text-light-grey">Skills</h3>
+    <p class="w3-wide">Cloud Computing (AWS)</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Android Development</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">Java & Python</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div><br>
+    
+    <!-- Resume Section -->
+<div class="resume-section">
+    <h2>My Resume</h2>
+    <a href="kittu_cv (2).pdf" download>
+      <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <i class="fa fa-download"></i> Download Resume
+      </button>
+    </a>
+  </div>
+  
+  
+  <!-- Projects Section -->
+  <div class="w3-padding-64 w3-content" id="projects">
+    <h2 class="w3-text-light-grey">My Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+    
+    <!-- Tic Tac Toe Project -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Tic Tac Toe Game Project: January '24</h3>
+    <p>
+      Leveraged Kotlin and Android development tools to craft a seamless, dynamic gaming experience with a focus on performance and fluidity. 
+      Enhanced user engagement by embedding MP3 background music using Android's media player, creating an enjoyable and captivating atmosphere.
+      Developed a sleek, user-centric interface and implemented efficient game logic to ensure flawless gameplay, including real-time move tracking 
+      and win/draw detection.
+      <br><strong>Tech:</strong> Kotlin, Android Studio, Android SDK, MediaPlayer API, XML (UI design), Git for version control.
+    </p>
+    
+    <!-- Sudoku Solver Project -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Sudoku Solver: November '23</h3>
+    <p>
+      Developed a desktop application utilizing advanced Data Structures and Algorithms (DSA), specifically backtracking, to solve complex Sudoku puzzles with precision. 
+      Implemented a clean, responsive UI for seamless user interaction, allowing for easy input of Sudoku grids and real-time puzzle-solving feedback. 
+      Leveraged algorithmic efficiency to ensure quick and accurate solutions, even for higher difficulty levels, with minimal computational overhead.
+      <br><strong>Tech:</strong> Java, JavaFX/Swing (for UI), DSA (Backtracking), Git for version control.
+    </p>
+    
+    <!-- ID Card Generator Project -->
+    <h3 class="w3-padding-16 w3-text-light-grey">ID Card Generator: August '23</h3>
+    <p>
+      Engineered a Java-based solution to automate the creation of professional ID cards for organizations, enhancing efficiency and customization. 
+      Established seamless database connectivity for secure, scalable storage of organizational and employee data, ensuring reliable data management and retrieval. 
+      Created a streamlined, user-centric interface for effortless data entry and ID generation, optimizing both user experience and operational productivity.
+      <br><strong>Tech:</strong> Java, JDBC (for database connectivity), SQL (for database management), Swing/JavaFX (for UI design), Git for version control.
+    </p>
+    
+    <!-- Mood Sensor Application Project -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Mood Sensor Application: March '23</h3>
+    <p>
+      Designed a sophisticated chat-based system that empowers salespeople to gauge client emotions and sentiment, enhancing their ability to tailor interactions 
+      and improve sales outcomes. Leveraged Natural Language Processing (NLP) techniques to accurately analyze and interpret client mood through chat interactions, 
+      delivering real-time feedback for improved client communication.
+      <br><strong>Tech:</strong> Java, NLP techniques, Chatbot frameworks, SQL (for data storage), Git for version control.
+    </p>
+  </div>
+  
+ <!-- Contact Section -->
+<div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Lovely Professional University, Punjab, India</p>
+    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 9390878906</p>
+    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: Srikrishnachoudhary60@gmail.com</p>
+    <form id="contactForm">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="user_name"></p>
+        <p><input class="w3-input w3-padding-16" type="email" placeholder="Email" required name="user_email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="subject"></p>
+        <p><textarea class="w3-input w3-padding-16" placeholder="Message" required name="message"></textarea></p>
+        <p>
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+        </p>
+    </form>
+</div>
+
+
+  
+   <!-- Footer -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://github.com/srikrishna9876" target="_blank" title="GitHub"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/sri_krishna_choudhary/" target="_blank" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/sri-krishna-choudhary/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by <a href="#" class="w3-hover-text-green">M. Vathsav Sri Krishna</a></p>
+</footer>
+
+</div>
+
+</body>
+</html>
+
